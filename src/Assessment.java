@@ -6,14 +6,21 @@ public class Assessment {
         {
 
             Scanner in = new Scanner(System.in);
-            System.out.print("Please enter a number to square: ");
-            int num = in.nextInt();
-            System.out.println("Your number squared is: " + square(num));
+
+            double firstNumber, secondNumber;
+            double sum;
+
+            System.out.print("Please enter first number: ");
+            firstNumber = in.nextInt();
+
+            System.out.println("Enter your second number: ");
+            secondNumber = in.nextInt();
+
+            sum = firstNumber + secondNumber;
+            System.out.println("Sum of the two numbers are: " + sum);
+
         }
-        public static int square(int num)
-        {
-            return num * num;
-        }
+
     }
 
 
